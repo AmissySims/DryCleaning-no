@@ -7,4 +7,10 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Components\" />
+    <Folder Include="PartialClasses\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
 </Project>
