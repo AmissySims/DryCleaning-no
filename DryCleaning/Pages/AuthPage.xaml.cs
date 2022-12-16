@@ -23,6 +23,27 @@ namespace DryCleaning.Pages
         public AuthPage()
         {
             InitializeComponent();
+            if (Properties.Settings.Default.Login != null)
+                LoginTb.Text = Properties.Settings.Default.Login;
+            if (Properties.Settings.Default.Password != null)
+                PasswordTb.Password = Properties.Settings.Default.Password;
+        }
+
+        private void EntrBtn_Click(object sender, RoutedEventArgs e)
+        {
+            int TimeAuth = Properties.Settings.Default.TimeAuth;
+            string login = LoginTb.Text.Trim();
+            string password = PasswordTb.Password.Trim();
+            if(TimeAuth < 3)
+            {
+                if (login.Length == 0 && password.Length == 0)
+                    MessageBox.Show("Заполните поля");
+                else
+                {
+
+                }
+
+            }
         }
     }
 }

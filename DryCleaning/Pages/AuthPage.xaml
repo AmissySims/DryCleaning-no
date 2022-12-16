@@ -23,7 +23,7 @@
                 <TextBlock  Text="Запомнить" Margin="5"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="EntrBtn" Content="Вход" Margin="5"/>
+                <Button x:Name="EntrBtn" Content="Вход" Margin="5" Click="EntrBtn_Click"/>
                 <Button x:Name="RegBtn" Content="Регистрация" Margin="5"/>
             </StackPanel>
         </StackPanel>
